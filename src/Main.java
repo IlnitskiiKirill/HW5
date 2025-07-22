@@ -8,23 +8,23 @@ public class Main {
 
         int clientOS = 1;
         if (clientOS == 1) {
-            System.out.println("Установите версию программы для Android по ссылке......");
+            System.out.println("Установите версию приложения для Android по ссылке......");
         } else if (clientOS == 0) {
-            System.out.println("Установите версию программы для IOS по ссылке....");
+            System.out.println("Установите версию приложения для IOS по ссылке....");
         }
 
 
         System.out.println("Задание №2");
         clientOS = 1;
-        int clientDeviceYear = 2019;
+        int clientDeviceYear = 2015;
         if (clientOS == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегчённую версию приложения для Android по ссылке....");
-        } else if (clientOS == 1 && clientDeviceYear > 2015) {
-            System.out.println("Установите версию программы для Android по ссылке....");
+        } else if (clientOS == 1 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для Android по ссылке....");
         } else if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегчённую версию приложения для IOS по ссылке...");
-        } else if (clientOS == 0 && clientDeviceYear > 2015) {
-            System.out.println("Установите версию программы для IOS по ссылке....");
+        } else if (clientOS == 0 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для IOS по ссылке....");
         }
         System.out.println("Задание №3");
         int year = 2028;
@@ -45,7 +45,7 @@ public class Main {
             System.out.println("Доставки нет");
         }
         System.out.println("Задание №5");
-        int monthNumber = 3;
+        int monthNumber = 18;
         switch (monthNumber) {
             case 1:
                 System.out.println("Зима");
@@ -84,6 +84,7 @@ public class Main {
                 System.out.println("Зима");
                 break;
             default:
+                System.out.println("Неправильное значение месяца");
         }
 
 
